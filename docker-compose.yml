@@ -1,0 +1,5 @@
+﻿services:
+  tests:
+    build:
+      context: .
+      dockerfile: TestesUnitarios.Desafio.Tests/Dockerfile
