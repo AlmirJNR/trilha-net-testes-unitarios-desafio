@@ -59,15 +59,7 @@ public class ValidacoesListaTests
         var resultado = _validacoes.MultiplicarNumerosLista(lista, 2);
 
         // Assert
-        var correspondeAoResultadoEsperado = false;
-        for (var i = 0; i < resultado.Count; i++)
-        {
-            correspondeAoResultadoEsperado = resultado[i] == resultadoEsperado[i];
-            if (!correspondeAoResultadoEsperado)
-                break;
-        }
-
-        Assert.True(correspondeAoResultadoEsperado);
+        Assert.Equal(resultadoEsperado, resultado);
     }
 
     [Fact]
